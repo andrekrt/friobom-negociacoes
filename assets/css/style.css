@@ -1,0 +1,222 @@
+body{
+    background-color: #E0CCA0;
+}
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+ 
+
+.titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.area-servicos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.nome-usuario{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.todos-servicos{
+    display: flex;
+    flex-direction: row;
+}
+
+.servicos{
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.filtros{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.valores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.valores p{
+    
+    font-size: 20px;
+}
+.logo{
+    width:227px;
+    margin-bottom: 10px;
+}
+.centralizar-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.centro-file{
+    margin-top: 24px;
+}
+
+.espaco{
+    margin-bottom: 10px;
+}
+
+.espaco label{
+    margin-bottom: 0;
+}
+
+.botao{
+    margin-top: 10px;
+}
+.form-control.ocultar{
+    background-color: #e0cca0;
+    border: none;
+    color: black;
+}
+.icon-arquivo{
+    height: 40px;
+}
+
+/*menu mobolie*/
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-mobile{
+    display: flex;
+    width: 45px;
+}
+.menu ul, .menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #fff;
+}
+.menu li a:hover{
+    border-bottom: 5px solid #b28756;
+    color: #fff;
+}
+.menu .active a{
+    border-bottom: 5px solid #b28756;
+    color: #ccc;
+}
+
+nav{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(224, 204, 160, 0.9);
+    width: 30vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+}
+
+
+.form-vert{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:768px){
+    .valores p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .filtros{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filtros a{
+        width: 20%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 425px){
+    .cabecalho{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .titulo{
+        margin-top: 10px;
+    }
+    .area-servicos{
+        flex-direction: column;
+    }
+    .nome-usuario{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .todos-servicos{
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .valores{
+        flex-direction: column;
+    }
+
+    .filtros a{
+        width:  40%;
+    }
+    .form-vert{
+        flex-direction: column;
+    }
+    .col{
+        margin: 10px;
+        text-align: center;
+    }
+    nav{
+        width: 100vw;
+        top: 115px;
+    }
+    .filtros a{
+        width: 50%;
+    }
+}
+
+@media (max-width:320px){
+    .titulo{
+        text-align: center;
+    }
+    nav{
+        top:150px;
+    }
+}
